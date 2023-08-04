@@ -16,7 +16,6 @@ gradle.taskGraph.whenReady { graph ->
 }
 
 task sourcesJar(type: Jar, dependsOn: project.classes) {
-    classifier = 'sources'
     from sourceSets.main.allSource
 }
 
